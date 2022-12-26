@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9d805ee-74f9-43d4-a438-4d54ce7401e2" name="Changes" comment="DB operations, connection and small Demo of them.&#10;&#10;DatabaseConnection class added for database connection and made this class Singleton for global access.&#10;commons-io-2.11.0.jar file is added for File manipulation&#10;CvOwnerDao class is added for CRUD operations. For now, add and delete is available.&#10;Model class CvOwner is added.&#10;Simple main program is added for selecting a file from desktop, filling the name,surname,department fields and create a CvOwner object with those fields. Then, write this object to Database">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cvStorage/199410.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="e9d805ee-74f9-43d4-a438-4d54ce7401e2" name="Changes" comment="modified some files.">
+      <change afterPath="$PROJECT_DIR$/pdfbox-3.0.0-RC1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,14 +47,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/berka/Desktop/CvDatabase/sqlite-jdbc-3.40.0.0.jar",
+    "last_opened_file_path": "C:/Users/berka/Desktop/CvDatabase/pdfbox-3.0.0-RC1.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RunManager">
