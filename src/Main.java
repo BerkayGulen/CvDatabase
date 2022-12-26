@@ -15,6 +15,7 @@ public class Main {
         CvOwner cvOwner = new CvOwner();
         CvOwnerDaoImpl dbHelper = new CvOwnerDaoImpl();
         dbHelper.deleteAll();
+        dbHelper.deleteAll();
         File cv;
 
         JFrame parentFrame = new JFrame();
