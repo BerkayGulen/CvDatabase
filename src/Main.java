@@ -6,17 +6,29 @@ import java.io.File;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException, SQLException {
 
         Scanner input = new Scanner(System.in);
+        File cv;
         CvOwner cvOwner = new CvOwner();
         CvOwnerDaoImpl dbHelper = new CvOwnerDaoImpl();
-        dbHelper.deleteAll();
-        dbHelper.deleteAll();
-        File cv;
+        ArrayList<CvOwner> localCvOwners = LocalDatabase.getLocalDatabase();
+        System.out.println("********************************************");
+        System.out.println("Before Add");
+        System.out.println("********************************************");
+
+        for (CvOwner person: localCvOwners){
+            person.display();
+        }
+
+        System.out.println("********************************************");
+        System.out.println("ADD");
+        System.out.println("********************************************");
+
 
         JFrame parentFrame = new JFrame();
         JFileChooser fileChooser = new JFileChooser();
@@ -36,19 +48,40 @@ public class Main {
         cvOwner.setSurname(input.nextLine());
         System.out.print("Enter department: ");
         cvOwner.setDepartment(input.nextLine());
-
         dbHelper.add(cvOwner);
-        cvOwner.setId(dbHelper.getMaxId());
 
-        System.out.println(cvOwner.getId());
-        System.out.println(cvOwner.getName());
-        System.out.println(cvOwner.getSurname());
-        System.out.println(cvOwner.getDepartment());
-        System.out.println(cvOwner.getCvFilePath());
+        System.out.println("********************************************");
+        System.out.println("After Add");
+        System.out.println("********************************************");
+
+        for (CvOwner person : localCvOwners) {
+            person.display();
+        }
+
+        dbHelper.deleteAll();
+        System.out.println("********************************************");
+        System.out.println("After remove all");
+        System.out.println("********************************************");
+
+        for (CvOwner person : localCvOwners) {
+            person.display();
+        }
+
+        System.out.println("********************************************");
+        System.out.println("Add again");
+        System.out.println("********************************************");
+        dbHelper.add(cvOwner);
+
+        for (CvOwner person : localCvOwners) {
+            person.display();
+        }
+
+//
+//        cvOwner.display();
 
 
-        Desktop.getDesktop().open(new File(cvOwner.getCvFilePath()));
-
+//        Desktop.getDesktop().open(new File(cvOwner.getCvFilePath()));
+            parentFrame.dispose();
 
     }
 }

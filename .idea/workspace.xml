@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9d805ee-74f9-43d4-a438-4d54ce7401e2" name="Changes" comment="modified some files.">
-      <change afterPath="$PROJECT_DIR$/pdfbox-3.0.0-RC1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="e9d805ee-74f9-43d4-a438-4d54ce7401e2" name="Changes" comment="Apache PDFBox jar file added.">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cvStorage/FENG495 MEETING 1 25.10.2022.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DatabaseObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LocalDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/230a5cae-485e-4019-93f0-8446dad75d38.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/cvOwner.db" beforeDir="false" afterPath="$PROJECT_DIR$/res/cvOwner.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CvOwner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CvOwner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CvOwnerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CvOwnerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CvOwnerDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CvOwnerDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +25,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -41,22 +49,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/berka/Desktop/CvDatabase/pdfbox-3.0.0-RC1.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/berka/Desktop/CvDatabase/pdfbox-3.0.0-RC1.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -67,6 +76,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -80,6 +90,8 @@
       <option name="presentableId" value="Default" />
       <updated>1672068438064</updated>
       <workItem from="1672068439613" duration="772000" />
+      <workItem from="1672358881350" duration="14000" />
+      <workItem from="1672421396127" duration="2511000" />
     </task>
     <task id="LOCAL-00001" summary="DB operations, connection and small Demo of them.&#10;&#10;DatabaseConnection class added for database connection and made this class Singleton for global access.&#10;commons-io-2.11.0.jar file is added for File manipulation&#10;CvOwnerDao class is added for CRUD operations. For now, add and delete is available.&#10;Model class CvOwner is added.&#10;Simple main program is added for selecting a file from desktop, filling the name,surname,department fields and create a CvOwner object with those fields. Then, write this object to Database">
       <created>1672069076636</created>
