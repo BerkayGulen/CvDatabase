@@ -5,11 +5,26 @@ public class CvOwner {
     private String department;
     private String cvFilePath;
 
+    public CvOwner(int id, String name, String surname, String department, String cvFilePath) {
+        this.id = id;
+        this.name = name;
+        this.surname = surname;
+        this.department = department;
+        this.cvFilePath = cvFilePath;
+    }
+
     public CvOwner(String name, String surname, String department, String cvFilePath) {
         this.name = name;
         this.surname = surname;
         this.department = department;
         this.cvFilePath = cvFilePath;
+    }
+    public void display(){
+        System.out.println("id: "+this.id);
+        System.out.println("name: "+this.name);
+        System.out.println("surname: "+this.surname);
+        System.out.println("department: "+this.department);
+        System.out.println("CV File Path: "+this.cvFilePath);
     }
     public CvOwner(){}
 
